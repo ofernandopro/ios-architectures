@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16762D0B431AECD5BA65AB5C /* Pods_iOSArchitectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C6156A4B2E263E07F32B9F /* Pods_iOSArchitectures.framework */; };
+		C4223C90297335840042CBC8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8F297335840042CBC8 /* RegisterViewController.swift */; };
 		C4596AF22970602800AECA91 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF12970602800AECA91 /* UserBusiness.swift */; };
 		C4596AF42970643700AECA91 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF32970643700AECA91 /* UserManager.swift */; };
 		C4596AFC2970820D00AECA91 /* iOSArchitecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */; };
@@ -38,6 +39,7 @@
 		93C6156A4B2E263E07F32B9F /* Pods_iOSArchitectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSArchitectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4EFC0846D34A34A3586CB /* Pods-iOSArchitectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitectures.debug.xcconfig"; path = "Target Support Files/Pods-iOSArchitectures/Pods-iOSArchitectures.debug.xcconfig"; sourceTree = "<group>"; };
 		BA37837F409448F77A75F829 /* Pods-iOSArchitectures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitectures.release.xcconfig"; path = "Target Support Files/Pods-iOSArchitectures/Pods-iOSArchitectures.release.xcconfig"; sourceTree = "<group>"; };
+		C4223C8F297335840042CBC8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C4596AF12970602800AECA91 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		C4596AF32970643700AECA91 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C4596AF92970820D00AECA91 /* iOSArchitecturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSArchitecturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				C4E6E7CC296FA6910023686C /* HomeViewController.swift */,
 				C4D51CE0297239BE00F83F49 /* LoginViewController.swift */,
+				C4223C8F297335840042CBC8 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D51CE1297239BE00F83F49 /* LoginViewController.swift in Sources */,
+				C4223C90297335840042CBC8 /* RegisterViewController.swift in Sources */,
 				C4E6E7CD296FA6910023686C /* HomeViewController.swift in Sources */,
 				C4E6E7C9296FA6910023686C /* AppDelegate.swift in Sources */,
 				C4BE6439296FAE4800813ABD /* UserModel.swift in Sources */,

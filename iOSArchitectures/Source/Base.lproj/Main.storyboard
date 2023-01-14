@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="fP1-u3-SiA">
             <objects>
-                <viewController id="dhq-AI-TS1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="dhq-AI-TS1" customClass="RegisterViewController" customModule="iOSArchitectures" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e75-wO-wz6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionRegisterButton:" destination="dhq-AI-TS1" eventType="touchUpInside" id="Uxc-V5-fwv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0T-3N-bKc">
                                 <rect key="frame" x="30" y="510" width="354" height="40"/>
@@ -208,6 +211,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLoginButton:" destination="dhq-AI-TS1" eventType="touchUpInside" id="V6t-DS-Itn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tl-gj-f2w">
                                 <rect key="frame" x="30" y="328" width="354" height="22"/>
@@ -253,6 +259,11 @@
                             <constraint firstItem="r0T-3N-bKc" firstAttribute="leading" secondItem="8Sf-mC-v7P" secondAttribute="leading" constant="30" id="yBY-Zr-nUP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="TkQ-TW-6n7" id="Btv-sZ-2L7"/>
+                        <outlet property="emailTextField" destination="g7p-jp-yZB" id="e87-eW-P5K"/>
+                        <outlet property="passwordTextField" destination="LXg-DB-5Ym" id="GtO-rt-zOP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRn-jh-pn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

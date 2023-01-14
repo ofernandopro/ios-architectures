@@ -31,7 +31,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func actionRegisterButton(_ sender: Any) {
-        
+        let registerVC = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        registerVC.modalPresentationStyle = .fullScreen
+        self.present(registerVC, animated: true)
     }
     
     func showMessage(title: String, message: String) {
