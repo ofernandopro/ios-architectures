@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		16762D0B431AECD5BA65AB5C /* Pods_iOSArchitectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C6156A4B2E263E07F32B9F /* Pods_iOSArchitectures.framework */; };
+		C4223C9329737E3E0042CBC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C9229737E3E0042CBC8 /* LoginViewController.swift */; };
+		C4223C9629737F220042CBC8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C9529737F220042CBC8 /* RegisterViewController.swift */; };
+		C4223C9829758D380042CBC8 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C9729758D380042CBC8 /* LoginPresenter.swift */; };
+		C4223C9A297595570042CBC8 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C99297595570042CBC8 /* RegisterPresenter.swift */; };
 		C4596AF22970602800AECA91 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF12970602800AECA91 /* UserBusiness.swift */; };
 		C4596AF42970643700AECA91 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF32970643700AECA91 /* UserManager.swift */; };
 		C4596AFC2970820D00AECA91 /* iOSArchitecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */; };
@@ -16,7 +20,7 @@
 		C4BE643E296FB07100813ABD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE643D296FB07100813ABD /* Constants.swift */; };
 		C4E6E7C9296FA6910023686C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6E7C8296FA6910023686C /* AppDelegate.swift */; };
 		C4E6E7CB296FA6910023686C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6E7CA296FA6910023686C /* SceneDelegate.swift */; };
-		C4E6E7CD296FA6910023686C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6E7CC296FA6910023686C /* ViewController.swift */; };
+		C4E6E7CD296FA6910023686C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6E7CC296FA6910023686C /* HomeViewController.swift */; };
 		C4E6E7D0296FA6910023686C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E6E7CE296FA6910023686C /* Main.storyboard */; };
 		C4E6E7D2296FA6980023686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E6E7D1296FA6980023686C /* Assets.xcassets */; };
 		C4E6E7D5296FA6980023686C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E6E7D3296FA6980023686C /* LaunchScreen.storyboard */; };
@@ -37,6 +41,10 @@
 		93C6156A4B2E263E07F32B9F /* Pods_iOSArchitectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSArchitectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4EFC0846D34A34A3586CB /* Pods-iOSArchitectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitectures.debug.xcconfig"; path = "Target Support Files/Pods-iOSArchitectures/Pods-iOSArchitectures.debug.xcconfig"; sourceTree = "<group>"; };
 		BA37837F409448F77A75F829 /* Pods-iOSArchitectures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitectures.release.xcconfig"; path = "Target Support Files/Pods-iOSArchitectures/Pods-iOSArchitectures.release.xcconfig"; sourceTree = "<group>"; };
+		C4223C9229737E3E0042CBC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C4223C9529737F220042CBC8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C4223C9729758D380042CBC8 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C4223C99297595570042CBC8 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		C4596AF12970602800AECA91 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		C4596AF32970643700AECA91 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C4596AF92970820D00AECA91 /* iOSArchitecturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSArchitecturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +55,7 @@
 		C4E6E7C5296FA6910023686C /* iOSArchitectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSArchitectures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E6E7C8296FA6910023686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E6E7CA296FA6910023686C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4E6E7CC296FA6910023686C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4E6E7CC296FA6910023686C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4E6E7CF296FA6910023686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E6E7D1296FA6980023686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E6E7D4296FA6980023686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +97,24 @@
 				93C6156A4B2E263E07F32B9F /* Pods_iOSArchitectures.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4223C9129737E2B0042CBC8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C4223C9229737E3E0042CBC8 /* LoginViewController.swift */,
+				C4223C9729758D380042CBC8 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C4223C9429737F140042CBC8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C4223C9529737F220042CBC8 /* RegisterViewController.swift */,
+				C4223C99297595570042CBC8 /* RegisterPresenter.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		C4596AFA2970820D00AECA91 /* iOSArchitecturesTests */ = {
@@ -185,9 +211,11 @@
 		C4E6E7E0296FA7100023686C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C4223C9429737F140042CBC8 /* Register */,
+				C4223C9129737E2B0042CBC8 /* Login */,
 				C4E6E7C8296FA6910023686C /* AppDelegate.swift */,
 				C4E6E7CA296FA6910023686C /* SceneDelegate.swift */,
-				C4E6E7CC296FA6910023686C /* ViewController.swift */,
+				C4E6E7CC296FA6910023686C /* HomeViewController.swift */,
 				C4E6E7CE296FA6910023686C /* Main.storyboard */,
 				C4E6E7D1296FA6980023686C /* Assets.xcassets */,
 				C4E6E7D3296FA6980023686C /* LaunchScreen.storyboard */,
@@ -349,10 +377,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E6E7CD296FA6910023686C /* ViewController.swift in Sources */,
+				C4223C9329737E3E0042CBC8 /* LoginViewController.swift in Sources */,
+				C4223C9629737F220042CBC8 /* RegisterViewController.swift in Sources */,
+				C4E6E7CD296FA6910023686C /* HomeViewController.swift in Sources */,
 				C4E6E7C9296FA6910023686C /* AppDelegate.swift in Sources */,
+				C4223C9829758D380042CBC8 /* LoginPresenter.swift in Sources */,
 				C4BE6439296FAE4800813ABD /* UserModel.swift in Sources */,
 				C4E6E7CB296FA6910023686C /* SceneDelegate.swift in Sources */,
+				C4223C9A297595570042CBC8 /* RegisterPresenter.swift in Sources */,
 				C4BE643B296FAEBD00813ABD /* UserProvider.swift in Sources */,
 				C4BE643E296FB07100813ABD /* Constants.swift in Sources */,
 				C4596AF42970643700AECA91 /* UserManager.swift in Sources */,
