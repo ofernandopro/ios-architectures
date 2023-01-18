@@ -11,9 +11,12 @@
 		C43DFC522978289800F361EF /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43DFC512978289800F361EF /* RegisterCoordinator.swift */; };
 		C43DFC552978290200F361EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43DFC542978290200F361EF /* RegisterViewController.swift */; };
 		C43DFC5729782E5500F361EF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43DFC5629782E5500F361EF /* HomeCoordinator.swift */; };
+		C43DFC5A297830B700F361EF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43DFC59297830B700F361EF /* UserViewModel.swift */; };
+		C43DFC5D297832E700F361EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43DFC5C297832E700F361EF /* HomeViewController.swift */; };
 		C4596AF22970602800AECA91 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF12970602800AECA91 /* UserBusiness.swift */; };
 		C4596AF42970643700AECA91 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF32970643700AECA91 /* UserManager.swift */; };
 		C4596AFC2970820D00AECA91 /* iOSArchitecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */; };
+		C45C212F29783D6900477886 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C212E29783D6900477886 /* RegisterView.swift */; };
 		C47ADC562976EAB6007A7566 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC552976EAB6007A7566 /* Coordinator.swift */; };
 		C47ADC58297735C7007A7566 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC57297735C6007A7566 /* LoginCoordinator.swift */; };
 		C47ADC5B29773688007A7566 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC5A29773688007A7566 /* UIColor+.swift */; };
@@ -48,10 +51,13 @@
 		C43DFC512978289800F361EF /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		C43DFC542978290200F361EF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C43DFC5629782E5500F361EF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		C43DFC59297830B700F361EF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C43DFC5C297832E700F361EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4596AF12970602800AECA91 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		C4596AF32970643700AECA91 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C4596AF92970820D00AECA91 /* iOSArchitecturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSArchitecturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSArchitecturesTests.swift; sourceTree = "<group>"; };
+		C45C212E29783D6900477886 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		C47ADC552976EAB6007A7566 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C47ADC57297735C6007A7566 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		C47ADC5A29773688007A7566 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -110,9 +116,26 @@
 		C43DFC53297828E600F361EF /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				C45C212D29783D5500477886 /* View */,
 				C43DFC542978290200F361EF /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		C43DFC582978306200F361EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C43DFC59297830B700F361EF /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C43DFC5B297832D200F361EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C43DFC5C297832E700F361EF /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C4596AFA2970820D00AECA91 /* iOSArchitecturesTests */ = {
@@ -121,6 +144,14 @@
 				C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */,
 			);
 			path = iOSArchitecturesTests;
+			sourceTree = "<group>";
+		};
+		C45C212D29783D5500477886 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C45C212E29783D6900477886 /* RegisterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C47ADC542976EA8E007A7566 /* Coordinator */ = {
@@ -146,6 +177,7 @@
 		C47ADC5D297737A6007A7566 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C43DFC5B297832D200F361EF /* Home */,
 				C43DFC53297828E600F361EF /* Register */,
 				C47ADC5E297737AC007A7566 /* Login */,
 			);
@@ -209,13 +241,14 @@
 		C4E6E7C7296FA6910023686C /* iOSArchitectures */ = {
 			isa = PBXGroup;
 			children = (
-				C47ADC5D297737A6007A7566 /* Controllers */,
-				C4E6E7E0296FA7100023686C /* Source */,
 				C4E6E7DC296FA6B90023686C /* API */,
+				C47ADC5D297737A6007A7566 /* Controllers */,
 				C47ADC542976EA8E007A7566 /* Coordinator */,
 				C4BE643C296FB06000813ABD /* Infrastructure */,
-				C4E6E7D6296FA6980023686C /* Info.plist */,
+				C4E6E7E0296FA7100023686C /* Source */,
+				C43DFC582978306200F361EF /* ViewModel */,
 				C4E6E7E1296FA9BB0023686C /* GoogleService-Info.plist */,
+				C4E6E7D6296FA6980023686C /* Info.plist */,
 			);
 			path = iOSArchitectures;
 			sourceTree = "<group>";
@@ -421,12 +454,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47ADC62297737DC007A7566 /* LoginViewController.swift in Sources */,
+				C45C212F29783D6900477886 /* RegisterView.swift in Sources */,
 				C4E6E7CD296FA6910023686C /* ViewController.swift in Sources */,
+				C43DFC5D297832E700F361EF /* HomeViewController.swift in Sources */,
 				C4E6E7C9296FA6910023686C /* AppDelegate.swift in Sources */,
 				C43DFC5729782E5500F361EF /* HomeCoordinator.swift in Sources */,
 				C47ADC58297735C7007A7566 /* LoginCoordinator.swift in Sources */,
 				C4BE6439296FAE4800813ABD /* UserModel.swift in Sources */,
 				C47ADC5B29773688007A7566 /* UIColor+.swift in Sources */,
+				C43DFC5A297830B700F361EF /* UserViewModel.swift in Sources */,
 				C4E6E7CB296FA6910023686C /* SceneDelegate.swift in Sources */,
 				C4BE643B296FAEBD00813ABD /* UserProvider.swift in Sources */,
 				C4BE643E296FB07100813ABD /* Constants.swift in Sources */,

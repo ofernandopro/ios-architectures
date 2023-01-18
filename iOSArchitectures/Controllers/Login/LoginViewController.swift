@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         }
         
         view.onLoginTap = { [weak self] email, password in
-            self?.onLoginTap(email, password)
+            self?.openTap(email, password)
         }
         
         
@@ -43,13 +43,14 @@ class LoginViewController: UIViewController {
     }
     
     private func openTap(_ email: String, _ password: String) {
-        let manager = UserManager(business: UserBusiness())
-        manager.login(email: email, password: password) { [weak self] userModel in
-            
-            self?.onLoginSuccess?()
-            
-        } failureHandler: { [weak self] error in
-            self?.showMessage("Erro", error.localizedDescription)
+        let userViewModel = UserViewModel()
+        userViewModel.getUserFromAPI(email, password) { [weak self] result in
+            switch result {
+            case .success(_):
+                self?.onLoginSuccess?()
+            case .failure(let error):
+                self?.showMessage("Erro", error.localizedDescription)
+            }
         }
 
     }

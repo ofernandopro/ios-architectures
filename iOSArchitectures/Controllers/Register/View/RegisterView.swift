@@ -1,19 +1,19 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  iOSArchitectures
 //
-//  Created by Fernando Moreira on 17/01/23.
+//  Created by Fernando Moreira on 18/01/23.
 //
 
 import UIKit
 
-class LoginView: UIView {
-    
+class RegisterView: UIView {
+
     // MARK: - Closures
-    var onRegisterTap:(() -> Void)?
-    var onLoginTap:((_ email: String, _ password: String) -> Void)?
-    
+    var onRegisterTap:((_ email: String, _ password: String) -> Void)?
+
     // MARK: - Properties
+
     lazy var emailLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -62,14 +62,28 @@ class LoginView: UIView {
         return tf
     }()
     
-    lazy var loginButton: UIButton = {
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Login", for: .normal)
-        btn.backgroundColor = .systemBlue
-        btn.layer.cornerRadius = 10
-        btn.addTarget(self, action: #selector(loginButtonTap), for: .touchUpInside)
-        return btn
+    lazy var confirmPasswordLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Confirm password"
+        label.textColor = .black
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        return label
+    }()
+    
+    lazy var confirmPasswordTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.layer.cornerRadius = 5
+        tf.layer.borderColor = UIColor.black.cgColor
+        tf.backgroundColor = UIColor(red: 237/255, green: 237/255, blue: 237/255, alpha: 1)
+        tf.textColor = .black
+        tf.placeholder = "Confirm your password..."
+        tf.isSecureTextEntry = true
+        tf.keyboardType = .emailAddress
+        tf.setLeftPaddingPoints(15)
+        return tf
     }()
     
     lazy var registerButton: UIButton = {
@@ -101,7 +115,8 @@ class LoginView: UIView {
         self.addSubview(emailTextField)
         self.addSubview(passwordLabel)
         self.addSubview(passwordTextField)
-        self.addSubview(loginButton)
+        self.addSubview(confirmPasswordLabel)
+        self.addSubview(confirmPasswordTextField)
         self.addSubview(registerButton)
         
         NSLayoutConstraint.activate([
@@ -124,12 +139,16 @@ class LoginView: UIView {
             passwordTextField.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
             passwordTextField.heightAnchor.constraint(equalToConstant: 40),
             
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
-            loginButton.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor),
-            loginButton.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
-            loginButton.heightAnchor.constraint(equalToConstant: 40),
+            confirmPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
+            confirmPasswordLabel.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor),
+            confirmPasswordLabel.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor),
             
-            registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 40),
+            confirmPasswordTextField.topAnchor.constraint(equalTo: confirmPasswordLabel.bottomAnchor, constant: 8),
+            confirmPasswordTextField.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor),
+            confirmPasswordTextField.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
+            confirmPasswordTextField.heightAnchor.constraint(equalToConstant: 40),
+            
+            registerButton.topAnchor.constraint(equalTo: confirmPasswordTextField.bottomAnchor, constant: 40),
             registerButton.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor),
             registerButton.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
             registerButton.heightAnchor.constraint(equalToConstant: 40),
@@ -138,18 +157,15 @@ class LoginView: UIView {
     }
     
     // MARK: - Actions
-    @objc func registerButtonTap() {
-        self.onRegisterTap?()
-    }
     
-    @objc func loginButtonTap() {
+    @objc func registerButtonTap() {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
-            self.onLoginTap?(email, password)
+            self.onRegisterTap?(email, password)
         } else {
             
         }
         
     }
-
+    
 }

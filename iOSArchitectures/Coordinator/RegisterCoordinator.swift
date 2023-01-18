@@ -11,8 +11,14 @@ class RegisterCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     func start() {
-        let viewController = RegisterViewController()
-        self.navigationController.pushViewController(viewController, animated: true)
+        let vc = RegisterViewController()
+        
+        vc.onRegisterSuccess = {
+            let coordinator = HomeCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        }
+        
+        self.navigationController.pushViewController(vc, animated: true)
     }
     
     required init(navigationController: UINavigationController) {
