@@ -17,6 +17,7 @@
 		C4596AF42970643700AECA91 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AF32970643700AECA91 /* UserManager.swift */; };
 		C4596AFC2970820D00AECA91 /* iOSArchitecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */; };
 		C45C212F29783D6900477886 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C212E29783D6900477886 /* RegisterView.swift */; };
+		C45C214129787D5200477886 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C214029787D5200477886 /* HomeView.swift */; };
 		C47ADC562976EAB6007A7566 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC552976EAB6007A7566 /* Coordinator.swift */; };
 		C47ADC58297735C7007A7566 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC57297735C6007A7566 /* LoginCoordinator.swift */; };
 		C47ADC5B29773688007A7566 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC5A29773688007A7566 /* UIColor+.swift */; };
@@ -58,6 +59,7 @@
 		C4596AF92970820D00AECA91 /* iOSArchitecturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSArchitecturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4596AFB2970820D00AECA91 /* iOSArchitecturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSArchitecturesTests.swift; sourceTree = "<group>"; };
 		C45C212E29783D6900477886 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C45C214029787D5200477886 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C47ADC552976EAB6007A7566 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C47ADC57297735C6007A7566 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		C47ADC5A29773688007A7566 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		C43DFC5B297832D200F361EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C45C213F29787D3A00477886 /* View */,
 				C43DFC5C297832E700F361EF /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -150,6 +153,14 @@
 			isa = PBXGroup;
 			children = (
 				C45C212E29783D6900477886 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C45C213F29787D3A00477886 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C45C214029787D5200477886 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -468,6 +479,7 @@
 				C4BE643E296FB07100813ABD /* Constants.swift in Sources */,
 				C47ADC6729775751007A7566 /* UITextField+.swift in Sources */,
 				C4596AF42970643700AECA91 /* UserManager.swift in Sources */,
+				C45C214129787D5200477886 /* HomeView.swift in Sources */,
 				C43DFC552978290200F361EF /* RegisterViewController.swift in Sources */,
 				C47ADC65297738EB007A7566 /* LoginView.swift in Sources */,
 				C4596AF22970602800AECA91 /* UserBusiness.swift in Sources */,
